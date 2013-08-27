@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- ID，用于在XML定义的内容布局时. -->
+    <item name="mdContent" type="id" />
+
+    <!-- ID，用于在XML定义菜单布局时. -->
+    <item name="mdMenu" type="id" />
+
+    <!-- 内容容器的ID. -->
+    <item name="md__content" type="id" />
+
+    <!-- 菜单容器的ID. -->
+    <item name="md__menu" type="id" />
+
+    <!-- 抽屉里的ID. -->
+    <item name="md__drawer" type="id" />
+
+    <!-- 使用View.setTag（INT）使用指定的位置活动视图. -->
+    <item name="mdActiveViewPosition" type="id" />
+
+    <item name="md__translationX" type="id" />
+
+    <item name="md__translationY" type="id" />
+    
+    <!-- PLA 瀑布流 -->
+    <item type="id" name="scrapped_view" />
+    
+    <!-- jazzy viewpager -->
+    <item name="jazzy_key" type="id"/>
+</resources>
