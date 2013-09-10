@@ -9,4 +9,9 @@
     
     <!-- jazz viewpager -->
     <color name="holo_blue">#FF33E5B5</color>
+    
+    <!-- Card listview -->
+    <color name="card_pressed">#7E0099CC</color>
+    <color name="header_button_default">#494949</color>
+    <color name="card_gray">#DEDEDE</color>
 </resources>

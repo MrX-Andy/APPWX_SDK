@@ -41,7 +41,7 @@ public final class R {
     public static final class array {
         /**  3D排风琴ViewPager(3D JazzyViewPager) 
          */
-        public static int jazzy_effects=0x7f090000;
+        public static int jazzy_effects=0x7f0a0000;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1659,7 +1659,12 @@ containing a value of this type.
         /**   appmsg 颜色. 
          */
         public static int alert=0x7f060001;
+        public static int card_gray=0x7f060007;
+        /**  Card listview 
+         */
+        public static int card_pressed=0x7f060005;
         public static int confirm=0x7f060002;
+        public static int header_button_default=0x7f060006;
         /**  jazz viewpager 
          */
         public static int holo_blue=0x7f060004;
@@ -1668,24 +1673,56 @@ containing a value of this type.
          */
         public static int md__defaultBackground=0x7f060000;
     }
+    public static final class dimen {
+        public static int card_content=0x7f07000b;
+        public static int card_header=0x7f07000d;
+        public static int card_header_button_margin_left=0x7f070014;
+        public static int card_header_button_padding_side=0x7f070012;
+        public static int card_header_button_padding_top=0x7f070013;
+        public static int card_header_button_text=0x7f070011;
+        public static int card_header_padding_horizontal=0x7f070010;
+        public static int card_header_padding_top=0x7f07000f;
+        public static int card_inner_padding_left=0x7f070005;
+        public static int card_inner_padding_right=0x7f070006;
+        public static int card_inner_padding_vertical=0x7f070004;
+        public static int card_outer_padding_bottom=0x7f070002;
+        public static int card_outer_padding_firstlast=0x7f070000;
+        public static int card_outer_padding_horizontal=0x7f070003;
+        public static int card_outer_padding_top=0x7f070001;
+        public static int card_shadow=0x7f07000c;
+        public static int card_subheader=0x7f07000e;
+        public static int card_thumbnail=0x7f070007;
+        public static int card_thumbnail_margin=0x7f070008;
+        public static int card_title=0x7f07000a;
+        public static int card_title_margin_left=0x7f070009;
+    }
     public static final class drawable {
         public static int above_shadow=0x7f020000;
-        public static int composer_button=0x7f020001;
-        public static int composer_button_normal=0x7f020002;
-        public static int composer_button_pressed=0x7f020003;
-        public static int composer_icn_plus=0x7f020004;
-        public static int composer_icn_plus_normal=0x7f020005;
-        public static int composer_icn_plus_pressed=0x7f020006;
-        public static int empty_photo=0x7f020007;
-        public static int fab__gradient=0x7f020008;
-        public static int fab__gradient_light=0x7f020009;
-        public static int ic_launcher=0x7f02000a;
-        public static int news_item_bg=0x7f02000b;
-        public static int sat_item=0x7f02000c;
-        public static int sat_main=0x7f02000d;
-        public static int wheel_bg=0x7f02000e;
-        public static int wheel_val=0x7f02000f;
-        public static int xlistview_arrow=0x7f020010;
+        public static int card_header_selector=0x7f020001;
+        public static int card_menu_button=0x7f020002;
+        public static int card_selector=0x7f020003;
+        public static int card_shadow=0x7f020004;
+        public static int composer_button=0x7f020005;
+        public static int composer_button_normal=0x7f020006;
+        public static int composer_button_pressed=0x7f020007;
+        public static int composer_icn_plus=0x7f020008;
+        public static int composer_icn_plus_normal=0x7f020009;
+        public static int composer_icn_plus_pressed=0x7f02000a;
+        public static int empty_photo=0x7f02000b;
+        public static int fab__gradient=0x7f02000c;
+        public static int fab__gradient_light=0x7f02000d;
+        public static int ic_launcher=0x7f02000e;
+        public static int ic_menu_moreoverflow_card_dark_normal=0x7f02000f;
+        public static int ic_menu_moreoverflow_card_dark_pressed=0x7f020010;
+        public static int list_focused=0x7f020011;
+        public static int news_item_bg=0x7f020012;
+        public static int pressed_background=0x7f020013;
+        public static int sat_item=0x7f020014;
+        public static int sat_main=0x7f020015;
+        public static int unpressed_background=0x7f020016;
+        public static int wheel_bg=0x7f020017;
+        public static int wheel_val=0x7f020018;
+        public static int xlistview_arrow=0x7f020019;
     }
     public static final class id {
         public static int accordion=0x7f05000f;
@@ -1726,6 +1763,7 @@ containing a value of this type.
         public static int horizontal=0x7f05001e;
         public static int ifContentScrolls=0x7f050028;
         public static int inherit=0x7f05002f;
+        public static int inner_frame=0x7f05005a;
         public static int insideInset=0x7f050021;
         public static int insideOverlay=0x7f050020;
         public static int invisible=0x7f05001b;
@@ -1771,18 +1809,18 @@ containing a value of this type.
         public static int outsideInset=0x7f050023;
         public static int outsideOverlay=0x7f050022;
         public static int progress=0x7f050057;
-        public static int ptr_id_header=0x7f05005a;
-        public static int ptr_id_image=0x7f05005b;
-        public static int ptr_id_last_updated=0x7f05005f;
-        public static int ptr_id_spinner=0x7f05005c;
-        public static int ptr_id_text=0x7f05005e;
-        public static int ptr_id_textwrapper=0x7f05005d;
+        public static int ptr_id_header=0x7f05005c;
+        public static int ptr_id_image=0x7f05005d;
+        public static int ptr_id_last_updated=0x7f050061;
+        public static int ptr_id_spinner=0x7f05005e;
+        public static int ptr_id_text=0x7f050060;
+        public static int ptr_id_textwrapper=0x7f05005f;
         public static int right=0x7f050002;
         public static int rotatedown=0x7f05000e;
         public static int rotateup=0x7f05000d;
         public static int rtl=0x7f05002e;
-        public static int sat_item=0x7f050060;
-        public static int sat_main=0x7f050061;
+        public static int sat_item=0x7f050062;
+        public static int sat_main=0x7f050063;
         /**  PLA 瀑布流 
          */
         public static int scrapped_view=0x7f050018;
@@ -1794,20 +1832,21 @@ containing a value of this type.
         public static int tablet=0x7f050005;
         public static int textEnd=0x7f050035;
         public static int textStart=0x7f050034;
+        public static int titleFrame=0x7f05005b;
         public static int top=0x7f050001;
         public static int vertical=0x7f05001f;
         public static int viewEnd=0x7f050038;
         public static int viewStart=0x7f050037;
         public static int visible=0x7f05001a;
-        public static int xlistview_footer_content=0x7f050062;
-        public static int xlistview_footer_hint_textview=0x7f050064;
-        public static int xlistview_footer_progressbar=0x7f050063;
-        public static int xlistview_header_arrow=0x7f050069;
-        public static int xlistview_header_content=0x7f050065;
-        public static int xlistview_header_hint_textview=0x7f050067;
-        public static int xlistview_header_progressbar=0x7f05006a;
-        public static int xlistview_header_text=0x7f050066;
-        public static int xlistview_header_time=0x7f050068;
+        public static int xlistview_footer_content=0x7f050064;
+        public static int xlistview_footer_hint_textview=0x7f050066;
+        public static int xlistview_footer_progressbar=0x7f050065;
+        public static int xlistview_header_arrow=0x7f05006b;
+        public static int xlistview_header_content=0x7f050067;
+        public static int xlistview_header_hint_textview=0x7f050069;
+        public static int xlistview_header_progressbar=0x7f05006c;
+        public static int xlistview_header_text=0x7f050068;
+        public static int xlistview_header_time=0x7f05006a;
         public static int yes=0x7f050039;
         public static int zoomin=0x7f05000b;
         public static int zoomout=0x7f05000c;
@@ -1821,38 +1860,44 @@ containing a value of this type.
         public static int fab__scrollview_container=0x7f030005;
         public static int infos_list=0x7f030006;
         public static int layout_refreshlistview_header=0x7f030007;
-        public static int ptr_header=0x7f030008;
-        public static int ray_menu=0x7f030009;
-        public static int sat_item_cr=0x7f03000a;
-        public static int sat_main=0x7f03000b;
-        public static int xlistview_footer=0x7f03000c;
-        public static int xlistview_header=0x7f03000d;
+        public static int list_item_card=0x7f030008;
+        public static int list_item_card_nocontent=0x7f030009;
+        public static int list_item_header=0x7f03000a;
+        public static int ptr_header=0x7f03000b;
+        public static int ray_menu=0x7f03000c;
+        public static int sat_item_cr=0x7f03000d;
+        public static int sat_main=0x7f03000e;
+        public static int xlistview_footer=0x7f03000f;
+        public static int xlistview_header=0x7f030010;
     }
     public static final class string {
-        public static int app_name=0x7f080001;
-        public static int empty=0x7f080000;
-        public static int md__drawerClosedIndicatorDesc=0x7f080003;
+        public static int app_name=0x7f090001;
+        public static int empty=0x7f090000;
+        public static int md__drawerClosedIndicatorDesc=0x7f090003;
         /**  menu drawer 字符串. 
          */
-        public static int md__drawerOpenIndicatorDesc=0x7f080002;
-        public static int ptr_last_updated=0x7f080007;
+        public static int md__drawerOpenIndicatorDesc=0x7f090002;
+        public static int ptr_last_updated=0x7f090007;
         /**  PLA 瀑布流 
          */
-        public static int ptr_pull_to_refresh=0x7f080004;
-        public static int ptr_refreshing=0x7f080006;
-        public static int ptr_release_to_refresh=0x7f080005;
-        public static int refreshlistview_no_update=0x7f080011;
-        public static int refreshlistview_pulldown=0x7f080010;
-        public static int refreshlistview_release=0x7f08000f;
+        public static int ptr_pull_to_refresh=0x7f090004;
+        public static int ptr_refreshing=0x7f090006;
+        public static int ptr_release_to_refresh=0x7f090005;
+        public static int refreshlistview_no_update=0x7f090011;
+        public static int refreshlistview_pulldown=0x7f090010;
+        public static int refreshlistview_release=0x7f09000f;
         /**  下拉刷新 
          */
-        public static int refreshlistview_updating=0x7f08000e;
-        public static int xlistview_footer_hint_normal=0x7f08000c;
-        public static int xlistview_footer_hint_ready=0x7f08000d;
-        public static int xlistview_header_hint_loading=0x7f08000a;
-        public static int xlistview_header_hint_normal=0x7f080008;
-        public static int xlistview_header_hint_ready=0x7f080009;
-        public static int xlistview_header_last_time=0x7f08000b;
+        public static int refreshlistview_updating=0x7f09000e;
+        /**  Card listview 
+         */
+        public static int see_more=0x7f090012;
+        public static int xlistview_footer_hint_normal=0x7f09000c;
+        public static int xlistview_footer_hint_ready=0x7f09000d;
+        public static int xlistview_header_hint_loading=0x7f09000a;
+        public static int xlistview_header_hint_normal=0x7f090008;
+        public static int xlistview_header_hint_ready=0x7f090009;
+        public static int xlistview_header_last_time=0x7f09000b;
     }
     public static final class style {
         /** 
@@ -1867,29 +1912,44 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static int AppBaseTheme=0x7f070010;
+        public static int AppBaseTheme=0x7f08001d;
         /**  menu drawer样式 . 
          */
-        public static int Widget=0x7f070008;
-        public static int Widget_MenuDrawer=0x7f070009;
+        public static int Widget=0x7f080008;
+        public static int Widget_MenuDrawer=0x7f080009;
+        public static int card_content=0x7f080018;
+        public static int card_header_inner=0x7f08001a;
+        public static int card_header_outer=0x7f080019;
+        public static int card_header_summary=0x7f08001c;
+        public static int card_header_title=0x7f08001b;
+        public static int card_inner=0x7f080014;
+        public static int card_outer=0x7f080013;
+        public static int card_popup_anchor=0x7f080011;
+        public static int card_shadow=0x7f080012;
+        public static int card_thumbnail=0x7f080015;
+        public static int card_title=0x7f080017;
+        public static int card_title_frame=0x7f080016;
+        /**  Card listview 
+         */
+        public static int header_button=0x7f080010;
         /**  全屏. 
          */
-        public static int noTitle=0x7f070007;
-        public static int ptr_arrow=0x7f070002;
-        public static int ptr_header=0x7f070001;
-        public static int ptr_headerContainer=0x7f070000;
-        public static int ptr_last_updated=0x7f070006;
-        public static int ptr_spinner=0x7f070003;
-        public static int ptr_text=0x7f070005;
-        public static int ptr_textwrapper=0x7f070004;
-        public static int refreshlistview_arrow=0x7f07000b;
-        public static int refreshlistview_comment=0x7f07000d;
+        public static int noTitle=0x7f080007;
+        public static int ptr_arrow=0x7f080002;
+        public static int ptr_header=0x7f080001;
+        public static int ptr_headerContainer=0x7f080000;
+        public static int ptr_last_updated=0x7f080006;
+        public static int ptr_spinner=0x7f080003;
+        public static int ptr_text=0x7f080005;
+        public static int ptr_textwrapper=0x7f080004;
+        public static int refreshlistview_arrow=0x7f08000b;
+        public static int refreshlistview_comment=0x7f08000d;
         /**  下拉刷新 
          */
-        public static int refreshlistview_container=0x7f07000a;
-        public static int refreshlistview_date=0x7f07000e;
-        public static int refreshlistview_header=0x7f07000f;
-        public static int refreshlistview_progress=0x7f07000c;
+        public static int refreshlistview_container=0x7f08000a;
+        public static int refreshlistview_date=0x7f08000e;
+        public static int refreshlistview_header=0x7f08000f;
+        public static int refreshlistview_progress=0x7f08000c;
     }
     public static final class styleable {
         /** Attributes that can be used with a AbsListView.

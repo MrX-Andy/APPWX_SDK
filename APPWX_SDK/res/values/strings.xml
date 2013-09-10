@@ -40,4 +40,7 @@
         <item>RotateDown</item>
         <item>Accordion</item>
     </string-array>
+    
+    <!-- Card listview -->
+    <string name="see_more">See More</string>
 </resources>
