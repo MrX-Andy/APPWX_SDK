@@ -1,0 +1,104 @@
+package com.appwx.view;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.view.GestureDetector;
+import android.view.GestureDetector.OnGestureListener;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+
+import com.appwx.sdk.R;
+
+
+public class ViewFlipper extends android.widget.ViewFlipper implements
+		OnTouchListener, OnGestureListener {
+
+	private final Context context;
+	private GestureDetector mGestureDetector = null;
+
+	public ViewFlipper(Context context) {
+		super(context);
+		this.context = context;
+
+		mGestureDetector = new GestureDetector(this);
+		setOnTouchListener(this);
+		setLongClickable(true);
+	}
+
+	public void addViews(int resId) {
+		ImageView view = new ImageView(context);
+		Resources resources = getResources();
+		Bitmap bitmap = BitmapFactory.decodeResource(resources, resId);
+		view.setImageBitmap(bitmap);
+
+		this.addView(view);
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		return this.mGestureDetector.onTouchEvent(event);
+	}
+
+	@Override
+	public boolean onDown(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
+			float velocityY) {
+		// 对手指滑动的距离进行了计算，如果滑动距离大于120像素，就做切换动作，否则不做任何切换动作。
+		// 从左向右滑动
+		if (e1.getX() - e2.getX() > 120) {
+			// 添加动画
+			this.setInAnimation(AnimationUtils.loadAnimation(context,
+					R.anim.push_left_in));
+			this.setOutAnimation(AnimationUtils.loadAnimation(context,
+					R.anim.push_left_out));
+			this.showNext();
+			System.out.println(":::::::::::::::::::::::::");
+			return true;
+		}// 从右向左滑动
+		else if (e1.getX() - e2.getX() < -120) {
+			this.setInAnimation(AnimationUtils.loadAnimation(context,
+					R.anim.push_right_in));
+			this.setOutAnimation(AnimationUtils.loadAnimation(context,
+					R.anim.push_right_out));
+			this.showPrevious();
+			return true;
+		}
+		return true;
+	}
+
+	@Override
+	public void onLongPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
+			float distanceY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void onShowPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean onSingleTapUp(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,9 @@
+<resources>
+
+    <!--  menu drawer 颜色. -->
+    <color name="md__defaultBackground">#FF555555</color>
+	<!--  appmsg 颜色. -->
+	<color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+</resources>

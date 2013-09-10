@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- menu drawer 自定义属性 . -->
+    <!-- 菜单抽屉style. -->
+    <attr name="menuDrawerStyle" format="reference" />
+
+    <!-- 菜单抽屉style属性. -->
+    <declare-styleable name="MenuDrawer">
+
+        <!-- 内容背景图片. -->
+        <attr name="mdContentBackground" format="reference" />
+
+        <!--背景图片. -->
+        <attr name="mdMenuBackground" format="reference" />
+
+        <!-- 菜单抽屉大小. -->
+        <attr name="mdMenuSize" format="dimension" />
+
+        <!-- 指示活动view. -->
+        <attr name="mdActiveIndicator" format="reference" />
+
+        <!-- 菜单抽屉是否阴影效果.默认值是true. -->
+        <attr name="mdDropShadowEnabled" format="boolean" />
+
+        <!-- 默认阴影效果大小. 默认不 6dp -->
+        <attr name="mdDropShadowSize" format="dimension" />
+
+        <!-- 默认阴影颜色. 默认为 #FF000000. -->
+        <attr name="mdDropShadowColor" format="color" />
+
+        <!-- 菜单抽屉下拉阴影. -->
+        <attr name="mdDropShadow" format="reference" />
+
+        <!-- 触摸屏大小. -->
+        <attr name="mdTouchBezelSize" format="dimension" />
+
+        <!-- 允许提示器和active view之间出现动画效果. -->
+        <attr name="mdAllowIndicatorAnimation" format="boolean" />
+
+        <!-- 动画持续时间 -->
+        <attr name="mdMaxAnimationDuration" format="integer" />
+
+        <!-- 替换自带的active view提示器 -->
+        <attr name="mdSlideDrawable" format="reference" />
+
+        <!-- 打开抽屉时，使用向上指标内容描述的字符串 -->
+        <attr name="mdDrawerOpenUpContentDescription" format="string" />
+
+        <!-- 关闭抽屉时，使用向上指标内容描述的字符串 -->
+        <attr name="mdDrawerClosedUpContentDescription" format="string" />
+
+        <!-- 在抽屉被打开和关闭时，是否绘制一个覆盖在抽屉 view-->
+        <attr name="mdDrawOverlay" format="boolean" />
+
+        <!-- 菜单抽屉显示的位置 -->
+        <attr name="mdPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+    
+    <!-- 弧形菜单 -->
+    <declare-styleable name="ArcLayout">
+		<attr name="fromDegrees" format="float" />
+		<attr name="toDegrees" format="float" />
+		<attr name="childSize" format="dimension" />
+	</declare-styleable>
+	
+    <!-- 纵向回弹菜单 -->
+	<declare-styleable name="RayLayout">
+		<attr name="leftHolderWidth" format="dimension" />
+	</declare-styleable>
+	
+</resources>

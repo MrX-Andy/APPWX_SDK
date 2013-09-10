@@ -1,0 +1,18 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 全屏. -->
+    <style name="noTitle" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+     <!-- menu drawer样式 . -->
+    <style name="Widget" />
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
+    
+</resources>

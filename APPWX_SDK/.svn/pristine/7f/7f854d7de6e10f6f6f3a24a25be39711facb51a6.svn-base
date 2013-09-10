@@ -1,0 +1,15 @@
+# view res/layout/fab__scrollview_container.xml #generated:8
+-keep class com.appwx.sdk.fadingactionbar.translucentactionbar.NotifyingScrollView { <init>(...); }
+
+# view res/layout/arc_menu.xml #generated:9
+-keep class com.appwx.sdk.menu.arc.ArcLayout { <init>(...); }
+
+# view res/layout/ray_menu.xml #generated:4
+-keep class com.appwx.sdk.menu.ray.RayLayout { <init>(...); }
+
+# view res/layout/act_sample.xml #generated:6
+-keep class com.appwx.sdk.pla.lib.MultiColumnListView { <init>(...); }
+
+# view res/layout/infos_list.xml #generated:9
+-keep class com.appwx.sdk.pla.view.ScaleImageView { <init>(...); }
+

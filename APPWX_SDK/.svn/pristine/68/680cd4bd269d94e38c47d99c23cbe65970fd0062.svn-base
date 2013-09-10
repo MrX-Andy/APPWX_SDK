@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">APPWX_SDK</string>
+
+    <!-- menu drawer 字符串. -->
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+</resources>

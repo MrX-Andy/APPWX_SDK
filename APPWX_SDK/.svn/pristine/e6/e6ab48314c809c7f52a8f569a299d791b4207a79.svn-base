@@ -1,0 +1,36 @@
+package com.appwx.model;
+
+import java.util.Map;
+
+public class Task {
+
+	private int id;
+	private Map<String, Object> param;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Map<String, Object> getParam() {
+		return param;
+	}
+
+	public void setParam(Map<String, Object> param) {
+		this.param = param;
+	}
+
+	@Override
+	public String toString() {
+		return "Task [id=" + id + ", param=" + param + "]";
+	}
+
+	public Task(int id, Map<String, Object> param) {
+		this.id = id;
+		this.param = param;
+	}
+
+}

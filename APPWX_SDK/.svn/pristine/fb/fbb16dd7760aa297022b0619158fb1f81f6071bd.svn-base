@@ -1,0 +1,8 @@
+package com.appwx.ui;
+
+public interface TaskActivity {
+
+	public void init();
+	
+	public void param(Object... param);
+}
